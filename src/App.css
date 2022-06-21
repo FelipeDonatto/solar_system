@@ -1,9 +1,14 @@
 * {
+  background-image: url('./images/background.png');
+  color: aliceblue;
   margin: 0;
   padding: 0;
 }
 
 header, div h2 {
+  background: black;
+  color: aliceblue;
+  padding: 5px;
   text-align: center;
 }
 
@@ -13,10 +18,17 @@ header, div h2 {
 }
 
 .planet-container {
+  background-image: url('./images/background.png');
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.planet-container h3 {
+  color: aliceblue;
 }
 
 .card img {
@@ -25,4 +37,33 @@ header, div h2 {
 
 .card {
   text-align: center;
+}
+
+.missionContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.missionContainer h2 {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.missionCard {
+  background-color: rgb(243, 242, 242);
+  border-radius: 10%;
+  box-shadow: 5px -3px white;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: 5px;
+  padding: 20px;
+  width: fit-content;
+}
+
+.missionCard p {
+  display: block;
 }
